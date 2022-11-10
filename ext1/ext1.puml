@@ -17,11 +17,10 @@ class IngredientOperator
 
 ClinetQueueMachineHandler ..> DrinkSellingMachine: <<create>>
 
-class IngredientOperatorWithSpeed #red {
+class IngredientOperatorWithSpeed #lightblue {
   -operation_speed: int
 
   - init()
-  # Tuple<str, bool> operate_ingredient()
 }
 
 DrinkSellingMachine "1" *--> "n" IngredientOperatorWithSpeed
